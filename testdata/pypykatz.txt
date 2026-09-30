@@ -1,0 +1,7 @@
+msv password TESTLAB jsmith P@ssw0rd123!
+msv hash TESTLAB jsmith 32ed87bdb5fdc5e9cba88547376818d4
+wdigest password TESTLAB admin Adm1nP@ss!
+wdigest hash TESTLAB admin e19ccf75ee54e06b06a5907af13cef42
+kerberos password TESTLAB.LOCAL jsmith P@ssw0rd123!
+kerberos aes TESTLAB.LOCAL jsmith 4a8bc3f0e1d2a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0
+msv hash TESTLAB svc_backup 8846f7eaee8fb117ad06bdd830b7586c

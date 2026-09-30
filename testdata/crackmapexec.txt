@@ -1,0 +1,4 @@
+SMB         10.0.0.5        445    DC01             [*] Windows Server 2019 Build 17763 x64
+SMB         10.0.0.5        445    DC01             [+] TESTLAB\jsmith:P@ssw0rd123!
+SMB         10.0.0.5        445    DC01             [+] TESTLAB\admin:Adm1nP@ss!
+SMB         10.0.0.10       445    FILE01           [+] TESTLAB\svc_backup:aad3b435b51404eeaad3b435b51404ee:8846f7eaee8fb117ad06bdd830b7586c

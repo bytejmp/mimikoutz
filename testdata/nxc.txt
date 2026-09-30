@@ -1,0 +1,11 @@
+SMB         10.0.0.5        445    DC01             [*] Windows Server 2019 Build 17763 x64 (name:DC01) (domain:TESTLAB.LOCAL) (signing:True) (SMBv1:False)
+SMB         10.0.0.5        445    DC01             [+] TESTLAB\admin:Adm1nP@ss! (Pwn3d!)
+SMB         10.0.0.5        445    DC01             SAM admin:500:aad3b435b51404eeaad3b435b51404ee:e19ccf75ee54e06b06a5907af13cef42:::
+SMB         10.0.0.5        445    DC01             SAM guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         10.0.0.10       445    FILE01           [+] TESTLAB\jsmith:P@ssw0rd123!
+SMB         10.0.0.10       445    FILE01           SAM jsmith:1001:aad3b435b51404eeaad3b435b51404ee:32ed87bdb5fdc5e9cba88547376818d4:::
+SMB         10.0.0.10       445    FILE01           SAM svc_backup:1002:aad3b435b51404eeaad3b435b51404ee:8846f7eaee8fb117ad06bdd830b7586c:::
+SMB         10.0.0.10       445    FILE01           SAM svc_sql:1003:aad3b435b51404eeaad3b435b51404ee:8846f7eaee8fb117ad06bdd830b7586c:::
+SMB         10.0.0.20       445    WEB01            [+] TESTLAB\svc_backup:aad3b435b51404eeaad3b435b51404ee:8846f7eaee8fb117ad06bdd830b7586c
+SMB         10.0.0.5        445    DC01             TESTLAB\domainadmin:500:aad3b435b51404eeaad3b435b51404ee:a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6:::
+SMB         10.0.0.5        445    DC01             TESTLAB\krbtgt:502:aad3b435b51404eeaad3b435b51404ee:deadbeefdeadbeefdeadbeefdeadbeef:::
