@@ -26,6 +26,46 @@ Zero external dependencies — built with Go stdlib only.
 
 ## Quick Start
 
+### Example Output
+
+```
+$ cat dump.txt | mimikoutz
+
+    /\_/\
+   ( ^.^ )    mimikoutz v1.0
+    > ^ <     "Tame the chaos, own the hash"
+   /|   |\
+  (_|   |_)   /*** Clean. Dedup. Dominate. ***/
+
+DOMAIN         USERNAME     NTLM                              PASSWORD       SOURCE    TAGS
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+TESTLAB        WIN10PC$     aad3b435b51404eeaad3b435b51404ee                 msv       [MACHINE]
+TESTLAB        admin                                          Adm1nP@ss!     wdigest   [PRIV]
+TESTLAB        admin        e19ccf75ee54e06b06a5907af13cef42                 msv       [PRIV]
+TESTLAB        backupadmin                                    B@ckup2024!    dpapi     [PRIV]
+TESTLAB        dbadmin                                        Str0ngDBP@ss!  vault     [PRIV]
+TESTLAB        jsmith                                         P@ssw0rd123!   tspkg
+TESTLAB        jsmith       32ed87bdb5fdc5e9cba88547376818d4                 msv
+TESTLAB        svc_backup   8846f7eaee8fb117ad06bdd830b7586c                 dcsync    [PRIV,SVC,KRBAST]
+TESTLAB        svc_backup   8846f7eaee8fb117ad06bdd830b7586c                 msv       [SVC,KRBAST]
+TESTLAB.LOCAL  admin                                          Adm1nP@ss!     kerberos  [PRIV]
+TESTLAB.LOCAL  admin        e19ccf75ee54e06b06a5907af13cef42                 sam       [PRIV]
+TESTLAB.LOCAL  jsmith                                         P@ssw0rd123!   kerberos
+TESTLAB.LOCAL  jsmith       32ed87bdb5fdc5e9cba88547376818d4
+
+[*] 15 unique credentials found
+```
+
+```
+$ cat dump.txt | mimikoutz -f hashcat
+
+# hashcat -m 1000 --username (NTLM)
+WIN10PC$:aad3b435b51404eeaad3b435b51404ee
+admin:e19ccf75ee54e06b06a5907af13cef42
+jsmith:32ed87bdb5fdc5e9cba88547376818d4
+svc_backup:8846f7eaee8fb117ad06bdd830b7586c
+```
+
 ### Build
 
 ```bash
