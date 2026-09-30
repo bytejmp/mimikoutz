@@ -1,10 +1,9 @@
 ```
-      .#####.        mimikoutz
-     .## ^ ##.       "Tame the chaos, own the hash"
-     ## / \ ##
-     ## \ / ##       /*** Clean. Dedup. Dominate. ***/
-     '## v ##'
-      '#####'
+    /\_/\
+   ( ^.^ )    mimikoutz v1.0
+    > ^ <     "Tame the chaos, own the hash"
+   /|   |\
+  (_|   |_)   /*** Clean. Dedup. Dominate. ***/
 ```
 
 # mimikoutz
